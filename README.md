@@ -38,6 +38,7 @@
 	- [ ] [Implement Stack using Linked List](https://practice.geeksforgeeks.org/problems/implement-stack-using-linked-list/1)
 	- [ ] [Implement Queue using Linked List](https://practice.geeksforgeeks.org/problems/implement-queue-using-linked-list/1)
 	- [ ] [LRU Cache](https://leetcode.com/problems/lru-cache/)
+	- [ ] [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)
 	- [ ] Segregate Even Odd
 	- [ ] Union and Intersection
 	- [ ] Detect and Remove cycle
