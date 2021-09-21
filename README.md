@@ -10,7 +10,7 @@
 - [x] Linked Lists VS Arrays
 - [ ] Operations
 - [ ] Implementation:
-	- [ ] Singly Linked List
+	- [x] Singly Linked List
 	- [ ] Doubly Linked List
 	- [ ] Circular Linked List
 - [ ] Collections Framework
@@ -21,10 +21,11 @@
 - [ ] Cycle Detection
 - [ ] Reversal of LinkedList
 - [ ] Problems
-	- [ ] [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
-	- [ ] [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)
+	- [x] [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
+	- [x] [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)
+	- [x] [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)
 	- [ ] [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
-	- [ ] [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/submissions/)
+	- [x] [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/submissions/)
 	- [ ] [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)
 	- [ ] [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)
 	- [ ] [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)
@@ -41,27 +42,6 @@
 	- [ ] Union and Intersection
 	- [ ] Detect and Remove cycle
 	- [ ] Clone LinkedList
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] 
 
 <hr />
 
@@ -76,6 +56,7 @@
 
 <hr />
 
+
 ## Linked Lists VS Arrays
 
 | Linked Lists                              | Arrays                                |
@@ -83,5 +64,22 @@
 | Linked lists can grow dynamically         | Array cannot grow Dynamically         |
 | Sequential access of elements is possible | Random access of elements is possible |
 
-<hr />
 
+---
+
+
+## Linked Lists Patterns
+
+### Reverse Linked List Pattern
+
+- [x] [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
+- [x] [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)
+
+
+### Runner Pattern (Also called Tortoise-Hare Technique)
+
+- [x] [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)
+- [x] [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/submissions/)
+
+
+---

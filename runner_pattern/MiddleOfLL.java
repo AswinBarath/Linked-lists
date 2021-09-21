@@ -1,4 +1,4 @@
-package LinkedLists;
+package runner_pattern;
 
 public class MiddleOfLL {
 
@@ -11,6 +11,6 @@ public class MiddleOfLL {
         }
         
         return slow;
-}
+	}
 
 }

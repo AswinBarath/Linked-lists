@@ -1,4 +1,4 @@
-package LinkedLists;
+package templates;
 
 /* 
 ** Java program to implement a Singly Linked List
@@ -7,12 +7,12 @@ package LinkedLists;
 public class ListNode {
 	
 	int val;
-	ListNode next;
-	ListNode() {}
+	public ListNode next;
+	public ListNode() {}
 	ListNode(int val) { this.val = val; }
 	ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 
-	ListNode head;
+	public ListNode head;
 	public ListNode insert(ListNode list, int data) {
 		ListNode new_node = new ListNode(data);
 		new_node.next = null;
@@ -47,11 +47,11 @@ public class ListNode {
 		
 	public static void main(String[] args) {
 		
-		ListNode list = new ListNode();
-		for(int i=1; i<=5; i++) {
-			list = list.insert(list, i);
-		}
-		list.printList(list);
+//		ListNode list = new ListNode();
+//		for(int i=1; i<=5; i++) {
+//			list = list.insert(list, i);
+//		}
+//		list.printList(list);
 		
 //		// Create a Linked List:
 //		ListNode list = new ListNode();
