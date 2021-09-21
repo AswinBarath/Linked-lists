@@ -79,7 +79,7 @@
 ### Runner Pattern (Also called Tortoise-Hare Technique)
 
 - [x] [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)
-- [x] [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/submissions/)
+- [x] [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/submissions/) `Amazon`, `Microsoft`, `Adobe`
 
 
 ---
