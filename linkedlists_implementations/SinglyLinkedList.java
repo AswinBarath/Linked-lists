@@ -205,4 +205,72 @@ public class SinglyLinkedList {
 		}
 	}
 
+	// Problems on Linked Lists
+	public void reverseData() throws Exception {
+
+		int left = 0;
+		int right = this.size - 1;
+
+		while (left < right) {
+
+			Node ln = getNodeAt(left);
+			Node rn = getNodeAt(right);
+
+			int temp = ln.data;
+			ln.data = rn.data;
+			rn.data = temp;
+			left++;
+			right--;
+		}
+	}
+
+	public void reversePointers() {
+
+		Node prev = this.head;
+		Node curr = prev.next;
+
+		while (curr != null) {
+			Node next = curr.next;
+			curr.next = prev;
+			prev = curr;
+			curr = next;
+		}
+
+		// swap head and tail of the class
+		Node t = this.head;
+		this.head = this.tail;
+		this.tail = t;
+
+		this.tail.next = null;
+
+	}
+
+	public int mid() {
+		Node slow = this.head;
+		Node fast = this.head;
+
+		while (fast.next != null && fast.next.next != null) {
+			slow = slow.next;
+			fast = fast.next.next;
+		}
+
+		return slow.data;
+	}
+
+	public int kthFromEnd(int k) {
+		Node slow = this.head;
+		Node fast = this.head;
+
+		for (int i = 0; i < k; i++) {
+			fast = fast.next;
+		}
+
+		while (fast != null) {
+			slow = slow.next;
+			fast = fast.next;
+		}
+
+		return slow.data;
+	}
+
 }
