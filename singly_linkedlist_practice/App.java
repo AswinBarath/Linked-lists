@@ -1,4 +1,4 @@
-package ds.singlylinkedlist;
+package singly_linkedlist_practice;
 
 public class App {
 
@@ -9,7 +9,7 @@ public class App {
 		mylist.insertFirst(99);
 		mylist.insertFirst(88);
 		mylist.insertLast(9999999);
-		
+
 		mylist.displayList();
 	}
 

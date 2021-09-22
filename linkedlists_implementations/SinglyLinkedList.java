@@ -1,6 +1,6 @@
-package linkedlists;
+package linkedlists_implementations;
 
-public class LinkedList {
+public class SinglyLinkedList {
 
 	private class Node {
 		int data;

@@ -1,4 +1,4 @@
-package reverse_list_pattern;
+package sde_sheet;
 
 import templates.LinkedList;
 import templates.ListNode;

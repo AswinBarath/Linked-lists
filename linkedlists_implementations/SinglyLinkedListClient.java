@@ -1,11 +1,11 @@
-package linkedlists;
+package linkedlists_implementations;
 
-public class Client {
+public class SinglyLinkedListClient {
 
 	public static void main(String[] args) {
 
 		try {
-			LinkedList list = new LinkedList();
+			SinglyLinkedList list = new SinglyLinkedList();
 			list.addFirst(10);
 			list.addLast(20);
 			list.addLast(30);
@@ -15,7 +15,7 @@ public class Client {
 			System.out.println(list.getFirst()); // 10
 			System.out.println(list.getLast()); // 60
 			System.out.println(list.getAt(3)); // 20
-			System.out.println(list.removeFirst()); // 10 
+			System.out.println(list.removeFirst()); // 10
 			System.out.println(list.removeLast()); // 60
 			System.out.println(list.removeAt(1)); // 10
 			list.display(); // 20 20 30

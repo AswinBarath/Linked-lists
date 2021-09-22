@@ -1,4 +1,4 @@
-package runner_pattern;
+package linked_list_problems;
 
 import templates.LinkedList;
 import templates.ListNode;

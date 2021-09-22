@@ -1,4 +1,4 @@
-package linkedlists;
+package linked_list_problems;
 
 import java.util.Scanner;
 
