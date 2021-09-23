@@ -86,7 +86,7 @@ public class AddTwoNumbers {
 
 		LinkedList listOp = new LinkedList();
 
-		// Create a Linked List [1,2,3,4,5] :
+		// Create a Linked List [5,6,7,8,9] :
 		for (int i = 5; i <= 9; i++) {
 			l1 = listOp.insert(l1, i);
 			l2 = listOp.insert(l2, i);
