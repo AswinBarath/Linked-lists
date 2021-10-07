@@ -8,12 +8,15 @@
 
 ### Day 5
 
-- [x] [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) - [Java Soultion](./ReverseLL.java)
-- [x] [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) - [Java Soultion](./MiddleOfLL.java)
-- [x] [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) - [Java Soultion](./MergeTwoSortedLists.java)
-- [x] [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/submissions/) - [Java Soultion](./RemoveNthNodeFromEndofList.java)
-- [x] [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/) - [Java Soultion](./DeleteNodeinaLinkedList.java)
-- [x] [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) - [Java Soultion](./AddTwoNumbers.java)
+| Completion Status | Linked List Problem | Solution |
+| --- | --- | --- |
+| [x] | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Java Soultion](./ReverseLL.java) |
+| [x] | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | [Java Soultion](./MiddleOfLL.java) |
+| [x] | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [Java Soultion](./MergeTwoSortedLists.java) |
+| [x] | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/submissions/) | [Java Soultion](./RemoveNthNodeFromEndofList.java)
+| [x] | [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/) | [Java Soultion](./DeleteNodeinaLinkedList.java) |
+| [x] | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [Java Soultion](./AddTwoNumbers.java) |
+
 
 ### Day 6
 
