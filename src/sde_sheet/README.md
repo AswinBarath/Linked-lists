@@ -141,11 +141,20 @@
 - If not then return null
 - Time Complexity: O(N) | Space Complexity: O(1)
 
-#### Intution for Runner Technique
+#### Intuition for Runner Technique
 
 - As the fast pointer moves by two steps, ultimately it will meet at any one point
 
 ---
 
+### Reverse Nodes in k-Group `Hard Problem from LeetCode`
+
+- Take four dummy nodes
+- One to point to the new head of LL
+- Other three to keep track of previous node, current node and the next node
+- Apply reversing LL technique for k groups and keep on updating the dummy nodes
+- Return the new head
+
+---
 
 
