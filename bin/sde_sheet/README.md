@@ -23,11 +23,11 @@
 
 | Completion Status | Linked List Problem | Explanation | Solution |
 | --- | --- | --- | --- |
-| ✅ | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | [Brute - Better - Optimal I & II Approach](#intersection-of-two-linked-lists) | [Java Soultion]() |
-| ✅ | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | [Brute & Optimal Approach](#linked-list-cycle) | [Java Soultion]() |
-| ✅ | [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | [Optimal Approach](#reverse-nodes-in-k-group) | [Java Soultion]() |
-| ✅ | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | [Iterative Approach]() | [Java Soultion]() |
-| ✅ | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | [Brute & Optimal Approach](#find-the-starting-point-of-the-cycle) | [Java Soultion]() |
+| ✅ | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | [Brute - Better - Optimal I & II Approach](#intersection-of-two-linked-lists) | [Java Soultion](./InterectionOfTwoLL.java) |
+| ✅ | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | [Brute & Optimal Approach](#linked-list-cycle) | [Java Soultion](./LinkedListCycle.java) |
+| ✅ | [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | [Optimal Approach](#reverse-nodes-in-k-group) | [Java Soultion](./ReverseKGroup.java) |
+| ✅ | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | [Iterative Approach]() | [Java Soultion](./PalindromeLL.java) |
+| ✅ | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | [Brute & Optimal Approach](#find-the-starting-point-of-the-cycle) | [Java Soultion](./FindStartingPointInLLloop.java) |
 | 🔃 | [Flattening a Linked List](https://practice.geeksforgeeks.org/problems/flattening-a-linked-list/1#) | [Iterative Approach]() | [Java Soultion]() |
 | 🔃 | [Rotate List](https://leetcode.com/problems/rotate-list/) | [Iterative Approach]() | [Java Soultion]() |
 
@@ -71,6 +71,8 @@
 #### `Yahoo | Amazon`
 
 #### Brute-force 
+#### Create new LL
+
 - Take the head nodes of the given two linked lists as h1 and h2
 - Create a dummy node d initialized to null
 - Compare the node values of h1 and h2 and take the smaller one
@@ -80,6 +82,27 @@
 - Repeat the comparisons and return dummy node d as the new head of LL.
 - Time Complexity: O(n1 + n2) | Space Complexity: O(n1 + n2) 
 
+#### Optimal approach
+#### In-place splicing of LLs
+
+- Take two dummy nodes l1 and l2 pointing to larger and smaller LLs respectively
+- Point l1 to whichever node value is smaller among given LLs and point l2 to larger node value
+- Take another dummy node res which points to l1. This res is the resultant answer by the end of function execution
+- Take a dummy node temp to store the smaller value among LL ( Basically to remember the last smallest node )
+- Traverse through the LLs until:
+	- l1 is smaller than l2
+	- Reassign the value to temp
+	- When l1 becomes greater than l2:
+		- Break the next of temp
+		- Point the next of temp to l2
+		- Swap l1 and l2 ( Because l1 got bigger than l2)
+		- Change temp to null
+	- Repeat this iteration until l1 becomes null
+- Time Complexity: O(n1 + n2) | Space Complexity: O(1)
+
+<p>
+	<img src="../../Assets/MergeSortedLLinPlaceDryRun.png" width="600px"/>
+</p>
 
 ---
 
