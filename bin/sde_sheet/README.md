@@ -23,11 +23,11 @@
 
 | Completion Status | Linked List Problem | Explanation | Solution |
 | --- | --- | --- | --- |
-| 🔃 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | [Brute - Better - Optimal I & II Approach]() | [Java Soultion]() |
-| 🔃 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | [Iterative Approach]() | [Java Soultion]() |
-| 🔃 | [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | [Iterative Approach]() | [Java Soultion]() |
-| 🔃 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | [Iterative Approach]() | [Java Soultion]() |
-| 🔃 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | [Iterative Approach]() | [Java Soultion]() |
+| ✅ | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | [Brute - Better - Optimal I & II Approach]() | [Java Soultion]() |
+| ✅ | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | [Iterative Approach]() | [Java Soultion]() |
+| ✅ | [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | [Iterative Approach]() | [Java Soultion]() |
+| ✅ | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | [Iterative Approach]() | [Java Soultion]() |
+| ✅ | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | [Iterative Approach]() | [Java Soultion]() |
 | 🔃 | [Flattening a Linked List](https://practice.geeksforgeeks.org/problems/flattening-a-linked-list/1#) | [Iterative Approach]() | [Java Soultion]() |
 | 🔃 | [Rotate List](https://leetcode.com/problems/rotate-list/) | [Iterative Approach]() | [Java Soultion]() |
 
@@ -154,6 +154,36 @@
 - Other three to keep track of previous node, current node and the next node
 - Apply reversing LL technique for k groups and keep on updating the dummy nodes
 - Return the new head
+- Time Complexity: O(N) | Space Complexity: O(1)
+
+---
+
+### Find THE STARTING POINT OF THE CYCLE 
+
+#### Brute force approach - Hashing
+
+- Hash all the nodes in a HashMap
+- When the same node occurs twice return it, else return null
+- Time Complexity: O(N) | Space Complexity: O(N)
+
+#### Optimal approach - Runner Technique
+
+- 1. Find the collision point
+- Move slow pointer by 1 step and fast pointer by 2 steps
+- They are bound to collide at one node if there exists a cycle
+- 2. Find the Starting point of LL Cycle
+- Take entry pointer from head of LL 
+- Move both **entry** and **slow** pointers by 1 step
+- When entry and slow pointers collide, that's the starting point of the LL
+- Hence return that node 
+- If no cycle exists, fast will reach null, hence return it
+- Time Complexity: O(N) | Space Complexity: O(1)
+
+#### Intuition behind this algorithm
+
+<p>
+	<img src="../../Assets/FindStartingPointLLcycleIntuition.png" width="600px"/>
+</p>
 
 ---
 
