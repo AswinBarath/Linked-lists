@@ -12,7 +12,7 @@
 | --- | --- | --- | --- |
 | ✅ | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Iterative Approach](#reverse-a-linkedlist) | [Java Soultion](./ReverseLL.java) |
 | ✅ | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | [Brute - Optimal Approach](#find-the-middle-of-linkedList-amazon-microsoft) | [Java Soultion](./MiddleOfLL.java) |
-| ✅ | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [Iterative Approach]() | [Java Soultion](./MergeTwoSortedLists.java) |
+| ✅ | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [Brute force Approach](#merge-two-sorted-linked-list) | [Java Soultion](./MergeTwoSortedLists.java) |
 | ✅ | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/submissions/) | [Iterative Approach]() | [Java Soultion](./RemoveNthNodeFromEndofList.java)
 | ✅ | [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/) | [Iterative Approach]() | [Java Soultion](./DeleteNodeinaLinkedList.java) |
 | ✅ | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [Iterative Approach]() | [Java Soultion](./AddTwoNumbers.java) |
@@ -23,32 +23,34 @@
 
 | Completion Status | Linked List Problem | Explanation | Solution |
 | --- | --- | --- | --- |
-| ✅ | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | [Brute - Better - Optimal I & II Approach]() | [Java Soultion]() |
-| ✅ | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | [Iterative Approach]() | [Java Soultion]() |
-| ✅ | [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | [Iterative Approach]() | [Java Soultion]() |
-| ✅ | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | [Iterative Approach]() | [Java Soultion]() |
-| ✅ | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | [Iterative Approach]() | [Java Soultion]() |
+| ✅ | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | [Brute - Better - Optimal I & II Approach](#intersection-of-two-linked-lists) | [Java Soultion](./InterectionOfTwoLL.java) |
+| ✅ | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | [Brute & Optimal Approach](#linked-list-cycle) | [Java Soultion](./LinkedListCycle.java) |
+| ✅ | [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | [Optimal Approach](#reverse-nodes-in-k-group) | [Java Soultion](./ReverseKGroup.java) |
+| ✅ | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | [Iterative Approach]() | [Java Soultion](./PalindromeLL.java) |
+| ✅ | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | [Brute & Optimal Approach](#find-the-starting-point-of-the-cycle) | [Java Soultion](./FindStartingPointInLLloop.java) |
 | 🔃 | [Flattening a Linked List](https://practice.geeksforgeeks.org/problems/flattening-a-linked-list/1#) | [Iterative Approach]() | [Java Soultion]() |
 | 🔃 | [Rotate List](https://leetcode.com/problems/rotate-list/) | [Iterative Approach]() | [Java Soultion]() |
 
 
 ---
 
-## Linked List Problems Rundown (Approaches to Solve)
+## Linked List Problems Rundown 
+### (Approaches to Solve)
 
 ### Reverse a LinkedList 
 
-- Create a dummy node - �newHead� and point it to null.
+- Create a dummy node - **newHead** and point it to null.
 - Run a loop until the head of LL reaches null.
-	- For each iteration, create a node �next� which stores the next reference of head.
-	- Break the next reference of the head by pointing it towards the �newHead�.
-	- Reassign �newHead� with head and then head with node �next�.
-- Return the �newHead�
+	- For each iteration, create a node **next** which stores the next reference of head.
+	- Break the next reference of the head by pointing it towards the **newHead**.
+	- Reassign **newHead** with head and then head with node **next**.
+- Return the **newHead**
 - Time Complexity: O(N) | Space Complexity: O(1)
 
 ---
 
-### Find the middle of LinkedList `Amazon | Microsoft`
+### Find the middle of LinkedList 
+#### `Amazon | Microsoft`
 
 #### Brute-force
 - Count all nodes in the given Linked list in one iteration
@@ -65,7 +67,8 @@
 
 ---
 
-### Merge two sorted Linked List `Yahoo | Amazon`
+### Merge two sorted Linked List 
+#### `Yahoo | Amazon`
 
 #### Brute-force 
 - Take the head nodes of the given two linked lists as h1 and h2
@@ -81,7 +84,8 @@
 ---
 
 
-### Intersection of Two Linked Lists `Amazon | Microsoft`
+### Intersection of Two Linked Lists 
+#### `Amazon | Microsoft`
 
 #### Brute Force approach
 
@@ -89,7 +93,8 @@
 - When you found equal nodes return it, else you will reach the end hence return null
 - Time Complexity: O(m * n); where m and n are length of LL 1 & 2 respectively
 
-#### Better approach - Hashing
+#### Better approach 
+#### Hashing
 
 - Traverse through first LL and hash the **Node Address**
 - Again traverse for second LL and check for equality
@@ -123,9 +128,11 @@
 
 ---
 
-### Linked List Cycle `Amazon | Samsung | Microsoft`
+### Linked List Cycle 
+#### `Amazon | Samsung | Microsoft`
 
-#### Brute force approach - Hashing
+#### Brute force approach 
+#### Hashing
 
 - Take a dummy node d and traverse through the Linked List
 - Create a HashMap to store Nodes and check whether the nodes exist already
@@ -133,7 +140,8 @@
 - Return the point where the node exists or when we reach null
 - Time Complexity: O(N) | Space Complexity: O(N)
 
-#### Optimal - Runner Technique
+#### Optimal 
+#### Runner Technique
 
 - Take two pointers slow and fast
 - Traverse slow pointer by one step and fast pointer by two steps
@@ -147,7 +155,8 @@
 
 ---
 
-### Reverse Nodes in k-Group `Hard Problem from LeetCode`
+### Reverse Nodes in k-Group 
+#### `Hard Problem from LeetCode`
 
 - Take four dummy nodes
 - One to point to the new head of LL
@@ -158,15 +167,17 @@
 
 ---
 
-### Find THE STARTING POINT OF THE CYCLE 
+### Find the starting point of the cycle
 
-#### Brute force approach - Hashing
+#### Brute force approach 
+#### Hashing
 
 - Hash all the nodes in a HashMap
 - When the same node occurs twice return it, else return null
 - Time Complexity: O(N) | Space Complexity: O(N)
 
-#### Optimal approach - Runner Technique
+#### Optimal approach 
+#### Runner Technique
 
 - 1. Find the collision point
 - Move slow pointer by 1 step and fast pointer by 2 steps

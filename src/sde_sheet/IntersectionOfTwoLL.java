@@ -2,7 +2,7 @@ package sde_sheet;
 
 import templates.ListNode;
 
-public class InterectionOfTwoLL {
+public class IntersectionOfTwoLL {
 
 	public ListNode interectionOfTwoLL(ListNode head1, ListNode head2) {
 
@@ -56,7 +56,7 @@ public class InterectionOfTwoLL {
 		System.out.println("LL 2");
 		listOp.printList(head2);
 
-		InterectionOfTwoLL point = new InterectionOfTwoLL();
+		IntersectionOfTwoLL point = new IntersectionOfTwoLL();
 
 		ListNode intersection = point.interectionOfTwoLL(head1, head2);
 
