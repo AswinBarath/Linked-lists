@@ -29,7 +29,7 @@
 | ✅ | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | [Iterative Approach]() | [Java Soultion](./PalindromeLL.java) |
 | ✅ | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | [Brute & Optimal Approach](#find-the-starting-point-of-the-cycle) | [Java Soultion](./FindStartingPointInLLloop.java) |
 | ✅ | [Flattening a Linked List](https://practice.geeksforgeeks.org/problems/flattening-a-linked-list/1#) | [Iterative Approach]() | [Java Soultion]() |
-| 🔃 | [Rotate List](https://leetcode.com/problems/rotate-list/) | [Iterative Approach]() | [Java Soultion]() |
+| ✅ | [Rotate List](https://leetcode.com/problems/rotate-list/) | [Iterative Approach]() | [Java Soultion]() |
 
 
 ---
@@ -256,3 +256,21 @@
 - Return the temp
 - Time Complexity: O(N) | Space Complexity: O(1)
 
+---
+
+### Clone a Linked List with next and random pointer
+
+#### Brute force approach 
+#### Hashing
+
+- Hash the current node with new duplicate node for the first traversal
+- Assign next and random pointers, one by one, using Hashmap for the next traversal
+- Return the new clone (deep copy) of LL
+
+#### Optimal appraoch
+
+- Copy nodes and insert them right after the original nodes
+- In the next iteration, Assign random pointers for the copy nodes using a dummy node `iter` and original nodes
+- Restore the original list, and extract the copy list
+
+---
