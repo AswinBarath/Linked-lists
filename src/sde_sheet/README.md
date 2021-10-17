@@ -29,7 +29,7 @@
 | ✅ | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | [Iterative Approach]() | [Java Soultion](./PalindromeLL.java) |
 | ✅ | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | [Brute & Optimal Approach](#find-the-starting-point-of-the-cycle) | [Java Soultion](./FindStartingPointInLLloop.java) |
 | ✅ | [Flattening a Linked List](https://practice.geeksforgeeks.org/problems/flattening-a-linked-list/1#) | [Iterative Approach]() | [Java Soultion]() |
-| 🔃 | [Rotate List](https://leetcode.com/problems/rotate-list/) | [Iterative Approach]() | [Java Soultion]() |
+| ✅ | [Rotate List](https://leetcode.com/problems/rotate-list/) | [Iterative Approach]() | [Java Soultion]() |
 
 
 ---
@@ -232,4 +232,27 @@
 - We have to flatten given LL in such a way that the first node must contain all other nodes connected using bottom pointer in a sorted order
 - So, if we can try to sort each LL from the back, we can reach to the solution
 - We can sort two linked lists recursively using Merge Two Sorted LL logic
+- Time Complexity: O(N) | Space Complexity: O(1)
+
+---
+
+#### Rotate List
+
+#### Adobe, Amazon, Microsoft, Goldman Sachs, MMT
+
+#### Brute force approach
+
+- Rotate the LL by indivdually adding nodes from the end
+- Time Complexity: O(k * N) | Space Complexity: O(1)
+
+
+#### Optimal approach
+
+- Count the length of Linked list
+- Correct the value of k
+- Point last node to first node, once you are done with first step itself
+- Traverse for `len-k` times, and save the next node in temp
+- Then break the next's link and reassign it to null
+- Return the temp
+- Time Complexity: O(N) | Space Complexity: O(1)
 
