@@ -195,7 +195,7 @@ Problems based on the Linked list data structure
 **Dry Run**
 
 <p>
-	<img src="assets/Reverse Nodes in k-Group.jpg" width="600px" >
+	<img src="./Assets/Reverse Nodes in k-Group.jpg" width="600px" >
 </p>
 
 ---
@@ -247,7 +247,7 @@ Problems based on the Linked list data structure
 **Dry Run**
 
 <p>
-	<img src="assets/Flattening a Linked List.jpg" width="600px" >
+	<img src="./Assets/Flattening a Linked List.jpg" width="600px" >
 </p>
 
 ---
@@ -275,7 +275,7 @@ Problems based on the Linked list data structure
 **Dry Run**
 
 <p>
-	<img src="assets/Rotate a LL.jpg" width="600px" >
+	<img src="./Assets/Rotate a LL.jpg" width="600px" >
 </p>
 
 ---
