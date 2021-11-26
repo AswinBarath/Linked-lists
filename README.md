@@ -192,6 +192,12 @@ Problems based on the Linked list data structure
 - Return the new head
 - Time Complexity: O(N) | Space Complexity: O(1)
 
+**Dry Run**
+
+<p>
+	<img src="assets/Reverse Nodes in k-Group.jpg" width="600px" >
+</p>
+
 ---
 
 ### Find the starting point of the cycle
@@ -238,6 +244,12 @@ Problems based on the Linked list data structure
 - We can sort two linked lists recursively using Merge Two Sorted LL logic
 - Time Complexity: O(N) | Space Complexity: O(1)
 
+**Dry Run**
+
+<p>
+	<img src="assets/Flattening a Linked List.jpg" width="600px" >
+</p>
+
 ---
 
 #### Rotate List
@@ -259,6 +271,12 @@ Problems based on the Linked list data structure
 - Then break the next's link and reassign it to null
 - Return the temp
 - Time Complexity: O(N) | Space Complexity: O(1)
+
+**Dry Run**
+
+<p>
+	<img src="assets/Rotate a LL.jpg" width="600px" >
+</p>
 
 ---
 
