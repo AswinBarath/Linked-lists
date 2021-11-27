@@ -380,3 +380,9 @@ Problems based on the Linked list data structure
 
 
 ---
+
+## Tutorials
+
+| Linked List - Singly + Doubly + Circular (Theory + Code + Implementation | Linked List Interview Questions - Google, FAANGM |
+| - | - |
+| [![Linked List - Singly + Doubly + Circular (Theory + Code + Implementation)](https://img.youtube.com/vi/58YbpRDc4yw/0.jpg)](https://www.youtube.com/watch?v=58YbpRDc4yw) | [![Linked List Interview Questions - Google, Facebook, Amazon, Microsoft, Apple, Twitter, LinkedIn](https://img.youtube.com/vi/70tx7KcMROc/0.jpg)](https://www.youtube.com/watch?v=70tx7KcMROc) |
